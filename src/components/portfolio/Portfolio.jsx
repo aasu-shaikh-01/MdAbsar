@@ -98,14 +98,14 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      img: "/project1.png",
+      img: "/project3.png",
       title: "School Management System",
       desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
       link: "/",
     },
     {
       id: 3,
-      img: "/project1.png",
+      img: "/p3.jpg",
       title: "Real-time Chat Application",
       desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
       link: "/",
