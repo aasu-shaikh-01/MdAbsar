@@ -8,7 +8,9 @@ import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
-// import Resume from "../../assets/docs/pdf-test.pdf";
+// import mypho from "../../assets/mypic.png";
+import mypho from "../../../public/assets/label.png";
+
 import Resume from '/pdf-test.pdf?url'
 const awardVariants = {
   initial: {
@@ -99,8 +101,10 @@ const Hero = () => {
           </motion.a>
         </motion.div>
       </div>
-      <div className="absolute sm:bottom-0 bottom-10 sm:ml-10 sm:w-[28rem] w-[21rem] sm:left-96 left-4">
-        <img src="hero.png" alt="" />
+      {/* <div className="absolute sm:bottom-0 bottom-10 sm:ml-10 sm:w-[28rem] sm:mt-96 w-[21rem] sm:left-96 left-4"> */}
+      <div className="absolute sm:bottom-0 h-full bottom-10 w-[40rem] ml-80">
+        {/* <img src="hero.png" alt="" /> */}
+        <img src={mypho} className="mt-20"/>
       </div>
       <motion.div
         initial={{ x: 50, opacity: 0 }}

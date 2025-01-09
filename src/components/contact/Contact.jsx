@@ -547,12 +547,13 @@ const Contact = () => {
       });
     try {
       await axios
-        .post("https://myportfolio-x32w.onrender.com/api/v1/message/send", {
+        .post("https://myportfolio-1-6dvb.onrender.com/api/v1/message/send", {
           name,
           email,
           message,
         })
         .then((res) => {
+          alert("Message sent via email as well as your message saved in mongoDB database!")
           toast.success(res.data.message);
           setEmail("");
           setMessage("");
