@@ -10,8 +10,10 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
 // import mypho from "../../assets/mypic.png";
 import mypho from "../../../public/assets/label.png";
+// import Resume from "../../../public/assets/MD ABSAR.pdf";
 
-import Resume from '/pdf-test.pdf?url'
+import Resume from '/myresume.pdf?url'
+// import Resume from 'MD ABSAR.pdf'
 const awardVariants = {
   initial: {
     x: -100,

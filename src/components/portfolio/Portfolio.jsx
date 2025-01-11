@@ -87,28 +87,35 @@
 // export default Portfolio;
 
 import { motion } from "motion/react";
+import one from "../../../public/assets/project1.png";
+import two from "../../../public/assets/project3.png";
+import { FaGithub } from "react-icons/fa";
+
 const Portfolio = () => {
   const items = [
     {
       id: 1,
-      img: "/project1.png",
-      title: "Full Stack Blog Application",
-      desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-      link: "/",
+      img: one,
+      title: "Hospital Management System",
+      desc: "With admin dashboard it optimizes hospital operations by managing patients, staff, and resources through an intuitive interface. It ensures seamless, fast, and accurate healthcare administration with robust back-end support. - MERN, Authorization And Authentication With JWT, etc.",
+      link: "https://hospital-managements-systems.netlify.app",
+      gotogit: "https://github.com/aasu-shaikh-01",
     },
     {
       id: 2,
-      img: "/project3.png",
-      title: "School Management System",
-      desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-      link: "/",
+      img: two,
+      title: "Portfolio Website",
+      desc: "This portfolio website, developed using the MERN stack, was created just before building my own portfolio. It reflects my expertise in designing and developing full-stack applications through real-world projects like the HMS (Hospital Management System). - MERN",
+      link: "https://first-portfolio-mern.netlify.app",
+      gotogit: "https://github.com/aasu-shaikh-01",
     },
     {
       id: 3,
       img: "/p3.jpg",
       title: "Real-time Chat Application",
-      desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
+      desc: "Under Process...",
       link: "/",
+      gotogit: "https://github.com/aasu-shaikh-01",
     },
   ];
   const awardVariants = {
@@ -146,11 +153,22 @@ const Portfolio = () => {
             <div className="">
               <h1 className="font-bold text-2xl my-2">{item.title}</h1>
               <p>{item.desc}</p>
-              <a href={item.link}>
+              <a href={item.link} target="_blank">
                 <button className="bg-amber-800 p-2 rounded-lg mt-3">
                   View Project
                 </button>
               </a>
+              <a href={item.gotogit} target="_blank">
+                <button
+                  className="bg-amber-800 p-2 rounded-lg mt-3 ml-2
+                "
+                >
+                  <div className="flex justify-center items-center gap-2">
+                    View Code <FaGithub size={"1.2rem"} />
+                  </div>
+                </button>
+              </a>
+              <span className="ml-4 bg-green-500 rounded-md p-1 px-2 text-xs">Live</span>
             </div>
           </motion.div>
         );
