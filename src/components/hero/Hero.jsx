@@ -169,9 +169,9 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
 // import mypho from "../../assets/mypic.png";
 import myphoto from "../../../public/assets/label.png";
-import mypho from "../../../public/assets/syno.png";
+// import mypho from "../../../public/assets/syno.png";
 
-import Resume from '/myresume.pdf?url'
+import Resume from "/myresume.pdf?url";
 // import Resume from 'MD ABSAR.pdf'
 const awardVariants = {
   initial: {
@@ -263,9 +263,9 @@ const Hero = () => {
         </motion.div>
       </div>
       {/* <div className="absolute sm:bottom-0 bottom-10 sm:ml-10 sm:w-[28rem] sm:mt-96 w-[21rem] sm:left-96 left-4"> */}
-      <div className="absolute bottom-0 sm:h-full sm:w-[40rem] sm:ml-80">
+      <div className="absolute sm:bottom-0 bottom-16 sm:h-full sm:w-[40rem] sm:ml-80">
         {/* <img src="hero.png" alt="" /> */}
-        <img src={myphoto} className="mt-20"/>
+        <img src={myphoto} className="sm:mt-20" />
         {/* <img src={mypho} className="mt-20 sm:hidden"/> */}
       </div>
       <motion.div
