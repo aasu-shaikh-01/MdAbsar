@@ -26,7 +26,8 @@ const ResponsiveSphere = () => {
   const [scale, setScale] = useState(2.2); // Default scale
 
   const updateScale = () => {
-    if (window.innerWidth < 640) {
+    // if (window.innerWidth < 640) {
+      if (window.innerWidth < 1250) {
       setScale(1.5); // Mobile screens
     } else if (window.innerWidth < 1024) {
       setScale(2); // Tablet screens

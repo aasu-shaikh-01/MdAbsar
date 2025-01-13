@@ -4,7 +4,7 @@ import mypho from "../../../public/assets/soya.png";
 const About = () => {
   return (
     <div className="h-screen sm:mt-0 flex justify-center flex-col sm:block items-center">
-      <div className="my-4 mb-8 sm:mb-0 sm:my-0">
+      <div className="my-4 sm:my-0">
         <h1 className="sm:text-3xl text-xl font-bold flex justify-center">
           All About Me
         </h1>
@@ -17,7 +17,7 @@ const About = () => {
      shadow-2xl h-[90vh]"
         id="About"
       >
-        <div className="sm:w-[300rem] p-4">
+        <div className="sm:w-[300rem] sm:p-4">
           <img
             src={mypho}
             className="rounded-lg shadow-2xl sm:w-[200rem] mb-12"

@@ -8,7 +8,7 @@ import { IoSchool } from "react-icons/io5";
 
 const Education = () => {
   return (
-    <div className="flex sm:h-screen flex-col items-center justify-center mt-12 sm:mt-0">
+    <div className="flex sm:h-screen flex-col items-center justify-center sm:mt-0">
       <div className="sm:w-[90vw]" id="Education">
         <div className="">
           <h1 className="sm:text-3xl text-xl font-bold flex justify-center">

@@ -553,7 +553,9 @@ const Contact = () => {
           message,
         })
         .then((res) => {
-          alert("Message sent via email as well as your message saved in mongoDB database!")
+          alert(
+            "Message sent via email as well as your message saved in mongoDB database!"
+          );
           toast.success(res.data.message);
           setEmail("");
           setMessage("");
@@ -565,10 +567,16 @@ const Contact = () => {
     }
   };
   return (
-    <>
+    <div>
+      <div className="sm:mt-44 -mt-[30rem]">
+        <h1 className="sm:text-3xl text-xl font-bold flex justify-center">
+          Contact
+        </h1>
+        <hr className="bg-white h-0.5 my-2 sm:mx-64 mx-8" />
+      </div>
       <div
         id="contact"
-        className="flex justify-between items-center sm:mx-4 flex-col sm:flex-row gap-8 mt-16 sm:mr-16 sm:p-8 shadow-2xl"
+        className="flex justify-between items-center sm:mx-4 flex-col sm:flex-row gap-8 mt-8 sm:mr-16 sm:p-8 shadow-2xl"
       >
         <div className="sm:w-[24rem]">
           {/* <img src="email.png" alt="emaiPic" className="h-full rounded-lg" /> */}
@@ -637,7 +645,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

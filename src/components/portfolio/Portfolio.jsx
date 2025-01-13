@@ -134,11 +134,17 @@ const Portfolio = () => {
   };
   return (
     <motion.div
-      className="flex gap-4 mx-4 sm:mx-0 flex-wrap"
+      className="flex sm:gap-4 gap-8 mx-4 sm:mx-0 flex-wrap"
       variants={awardVariants}
       initial="initial"
       animate="animate"
     >
+      <div className="w-[100vw] flex justify-center flex-col">
+        <h1 className="sm:text-3xl text-xl font-bold flex justify-center">
+          Portfolio
+        </h1>
+        <hr className="bg-white h-0.5 my-2 sm:mx-64 mx-8" />
+      </div>
       {items.map((item) => {
         return (
           <motion.div
@@ -168,7 +174,9 @@ const Portfolio = () => {
                   </div>
                 </button>
               </a>
-              <span className="ml-4 bg-green-500 rounded-md p-1 px-2 text-xs">Live</span>
+              <span className="ml-4 bg-green-500 rounded-md p-1 px-2 text-xs">
+                Live
+              </span>
             </div>
           </motion.div>
         );
